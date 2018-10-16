@@ -1,0 +1,36 @@
+/* 
+***********************************************
+*Author: Baruch Flores                        *
+*Homework 19: Clicky Game!                    *
+*UCB Extension - Full-Stack Bootcamp          *
+*October 2018                                 *
+*********************************************** 
+*/
+
+import React from "react";
+import "./Grid.css";
+import CarCard from "../Car";
+
+const Grid = props => {
+
+    console.log(props);
+    return (
+
+        <div className="container border">
+            <div className="row">
+                <h1>Try to click on each classic Porsche car. But do not choose the same car twice or you lose!</h1>
+            </div>
+            <div className="row">
+                <CarCard
+                    cars={props.cars}
+                    handleClick={props.handleClick}
+                    handleIncrement={props.handleIncrement}
+                    handleReset={props.handleReset}
+                    handleShuffle={props.handleShuffle}
+                />
+            </div>
+        </div>
+    );
+}
+
+export default Grid;

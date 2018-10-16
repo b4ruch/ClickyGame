@@ -1,3 +1,12 @@
+/* 
+***********************************************
+*Author: Baruch Flores                        *
+*Homework 19: Clicky Game!                    *
+*UCB Extension - Full-Stack Bootcamp          *
+*October 2018                                 *
+*********************************************** 
+*/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
