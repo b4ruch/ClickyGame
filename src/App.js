@@ -6,12 +6,16 @@ import Navbar from "./components/Navbar";
 import Grid from "./components/Grid";
 
 
-function shuffleCars(array) {
-  for (let i = array.length - 1; i > 0; i--) {
+function randomizeCars(cars) {
+  for (let i = cars.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+    let ii = cars[i];
+    let jj = cars[j];
+    jj = (ii=>ii)(ii,ii=jj);
+    cars[i] = ii;
+    cars[j] = jj;
   }
-  return array;
+  return cars;
 };
 
 class App extends Component {
@@ -45,7 +49,7 @@ class App extends Component {
     else if (newScore === 12) {
       this.setState({ result: "You win!" });
     }
-    this.handleShuffle();
+    this.handlerandomize();
   };
 
   handleReset = () => {
@@ -53,14 +57,14 @@ class App extends Component {
       score: 0,
       topScore: this.state.topScore,
       result: "Reset!",
-      clicked: []
+      chosen: []
     });
-    this.handleShuffle();
+    this.handlerandomize();
   };
 
-  handleShuffle = () => {
-    let shuffledCars = shuffleCars(porscheCollection);
-    this.setState({ porscheCollection: shuffledCars });
+  handlerandomize = () => {
+    let randomizedCars = randomizeCars(porscheCollection);
+    this.setState({ porscheCollection: randomizedCars });
   };
 
 
@@ -78,7 +82,7 @@ class App extends Component {
           handleClick={this.handleClick}
           handleIncrement={this.handleIncrement}
           handleReset={this.handleReset}
-          handleShuffle={this.handleShuffle} />
+          handlerandomize={this.handlerandomize} />
       </Wrapper>
     )
   }
