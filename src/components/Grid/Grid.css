@@ -14,14 +14,15 @@
     margin-bottom: 2rem;
 }
 .introp {
-    background-color: rgba(128, 128, 128, 0.623);
+    background-color: rgba(128, 128, 128, 0.774);
     border-radius: 2rem;
     
 }
 
 .intro {
     font-family: 'Audiowide', cursive;
-    color:aqua;
+    font-size: 2rem;
+    color:whitesmoke;
     text-align: center;
     text-shadow: 2px;
 }

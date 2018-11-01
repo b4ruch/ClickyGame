@@ -20,7 +20,7 @@ const Grid = props => {
             <div className="row introp">
                 <h1 className="intro">Try to click on each classic Porsche car. But do not choose the same car twice or you lose!</h1>
             </div>
-            <div className="row w-90">
+            <div className="row">
                 <CarCard
                     cars={props.cars}
                     handleClick={props.handleClick}
