@@ -7,6 +7,8 @@
 *********************************************** 
 */
 
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
 .container {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -14,10 +16,12 @@
 .introp {
     background-color: rgba(128, 128, 128, 0.623);
     border-radius: 2rem;
+    
 }
 
 .intro {
+    font-family: 'Audiowide', cursive;
     color:aqua;
     text-align: center;
-    text-shadow: 2rem;
+    text-shadow: 2px;
 }
