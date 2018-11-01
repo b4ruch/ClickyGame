@@ -1,3 +1,13 @@
+/* 
+***********************************************
+*Author: Baruch Flores                        *
+*Homework 19: Clicky Game!                    *
+*UCB Extension - Full-Stack Bootcamp          *
+*October 2018                                 *
+*********************************************** 
+*/
+
+
 import React, { Component } from 'react';
 import './App.css';
 import porscheCollection from "./cars.json";

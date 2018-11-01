@@ -15,12 +15,12 @@ const Car = props => {
 
   let cars = props.cars.map(car => (
     <div className="col-3" key={car.id} onClick={() => { props.handleClick(car.id) }}>
-      <div className="card">
-        <img className="card-img-top" src={car.image} alt="" />
+      <div className="card my-2 bg-transparent">
+        <img className="card-img-top m-0 rounded" src={car.image} alt="" />
       </div>
     </div>
   ));
-
+ 
   return cars;
 };
 
